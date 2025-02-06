@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --ff-all: "Audiowide", serif;
+}
+/* .main {
+    max-width: 600px;
+    min-height: 300px;
+    background-image: linear-gradient(to right, rgb(150, 232, 255), rgb(199, 174, 232));
+} */
+ .main{
+    max-width: 600px;
+    height: 300px;
+    background-image: linear-gradient(to right, rgb(150, 232, 255), rgb(199, 174, 232));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin: 10px auto;
+ }
+.btn-box{
+    width: 120px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: var(--ff-all);
+    color: rgb(0, 111, 128);
+    &.btn-box:hover{
+        background-color: rgb(127, 98, 141);
+        color: white;
+    }
+}    
+.name{
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+}
+/* @keyframes slideDown {
+    from{
+        top: 100%;
+    }
+    to{
+        top: 0;
+    }
+}
+
+.name.open{
+    animation: slideDwon 0.5s else-in;
+    top: 0;
+} */
+ .dialouge{
+    max-width: 350px;
+    min-height: 250px;
+    background-color: aqua;
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    border-radius: 5px;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+ }
+ @media (max-width: 1100px) {
+    .dialouge{
+        width: 200px;
+    }
+ }
+ h2{
+    text-align: center;
+    font-family: var(--ff-all);
+    margin-bottom: 30px;
+ }
+ .text-box{
+    width: 20vw;
+    height: 80px;
+    padding: 6px;
+    display: block;
+    margin: auto;
+ }
+ textarea::placeholder{
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--ff-all);
+    line-height: 60px;
+    border-color: red;
+ }
+ .submit-btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    font-family: var(--ff-all);
+    color: white;
+    background-color: black;
+    float: right;
+    margin-right: 20px;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+ }
+ .fa-xmark{
+    float: right;
+    margin-right: 5px;
+    font-size: 30px;
+    &:hover{
+        color: red;
+    }
+ }
+ .lightBox{
+    width: 20vw;
+    height: 180px;
+    background-color: rgb(230, 197, 223);
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    border-radius: 5px;
+    display: none;
+ }
+ #file{
+    margin: 0 0 20px 20px;
+ }
+ .contact{
+    min-width: 500px;
+    height: 300px;
+    font-family: var(--ff-all);
+    background-color: aquamarine;
+    position: absolute;
+    top: 25%;
+    left: 33.5%;
+    border-radius: 5px;
+    display: none;
+ }
+ label{
+    margin-left: 5px;
+ }
+.fullname,
+.email,
+.message{
+    width: 20vw;
+    height: 40px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
