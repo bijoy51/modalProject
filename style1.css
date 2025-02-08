@@ -44,7 +44,7 @@
     position: absolute;
     top: 10px;
 }
-/* @keyframes slideDown {
+ @keyframes slideDown {
     from{
         top: 100%;
     }
@@ -52,7 +52,7 @@
         top: 0;
     }
 }
-
+/*
 .name.open{
     animation: slideDwon 0.5s else-in;
     top: 0;

@@ -10,12 +10,14 @@ const contactUs = document.getElementById("contact");
 const closeContact = document.getElementById("closeBtn_2");
 openModalBtn.onclick = function(){
     dialouge_box.style.display = "block";
+    dialouge_box.style.animation = "slideDown 0.5s ease-in";
 };
 closeBtn.onclick = function(){
     dialouge_box.style.display = "none";
 };
 openLightBox.onclick = function(){
     lightBox.style.display = "block";
+    lightBox.style.animation = "slideDown 0.5s ease-in";
 };
 closeBtnLight.onclick = function(){
     lightBox.style.display = "none";
@@ -25,6 +27,7 @@ notification.onclick = function(){
 };
 openContact.onclick = function(){
     contactUs.style.display = "block";
+    contact.style.animation = "slideDown 0.5s ease-in";
 }
 closeContact.onclick = function(){
     contactUs.style.display = "none";
