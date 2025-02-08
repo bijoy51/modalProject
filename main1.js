@@ -8,7 +8,7 @@ const notification = document.getElementById("notification-btn");
 const openContact = document.getElementById("contact-btn");
 const contactUs = document.getElementById("contact");
 const closeContact = document.getElementById("closeBtn_2");
-openModalBtn.onclick = function() {
+openModalBtn.onclick = function(){
     dialouge_box.style.display = "block";
     dialouge_box.style.animation = "slideDown 0.5s ease-in";
 };
